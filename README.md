@@ -18,7 +18,7 @@
 
 <h3 align="center">🌈 Follow Me 🌈</h3>
 <p align="center">
-  <a href="https://www.notion.so/forestofdevelop/f4e0f2cc58584c84b84c8223fcd44bf4">
+  <a href="https://www.notion.so/forestofdevelop/f4e0f2cc58584c84b84c8223fcd44bf4?pvs=4">
   <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
   </a>
   <a href="https://github.com/Gamemode1221/MindSharing">
