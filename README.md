@@ -17,6 +17,6 @@
 </p>
 
 <h3 align="center">🌈 Follow Me 🌈</h3>
-
+<img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
 
 <!-- main 영역 -->
