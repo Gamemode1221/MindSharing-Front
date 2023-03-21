@@ -5,6 +5,7 @@
  <p align="center">최용호, 이진아, 박소영, 이현종</p>
 </p>
 
+<h3 align="center">📚 Tech Stack 📚</h3>
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a>&nbsp 
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a>&nbsp
@@ -14,5 +15,8 @@
   <img src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"></a>&nbsp
   <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"></a>&nbsp
 </p>
+
+<h3 align="center">🌈 Follow Me 🌈</h3>
+<img src="https://img.shields.io/badge/notion-#000000?style=for-the-badge&logo=Notion&logoColor=white" href="https://www.notion.so/forestofdevelop/f4e0f2cc58584c84b84c8223fcd44bf4?p=5c40e89433cd450d9121d58b4d457d24&pm=s">
 
 <!-- main 영역 -->
