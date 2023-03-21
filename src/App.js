@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes, Route, Link } from 'react-router-dom';
+import Login from './js/login';
+import SignUp from './js/signup';
+
+// npm install node-sass
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1> 공사중 입니다. </h1>
+        <ul>
+          <li><Link to="./login">로그인</Link></li>
+          <li><Link to="./signup">회원가입</Link></li>
+        </ul>
       </header>
+        <Routes>
+            <Route exact path="./login" component={Login}></Route>
+            <Route exact path="./signup" component={SignUp}></Route>
+        </Routes>
     </div>
   );
 }
