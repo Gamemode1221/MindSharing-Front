@@ -21,5 +21,8 @@
   <a href="https://www.notion.so/forestofdevelop/f4e0f2cc58584c84b84c8223fcd44bf4">
   <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
   </a>
+  <a href="https://github.com/Gamemode1221/MindSharing">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white">
+  </a>
 </p>
 <!-- main 영역 -->
