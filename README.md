@@ -17,7 +17,7 @@
 </p>
 
 <h3 align="center">🌈 Follow Me 🌈</h3>
-<a href="https://www.notion.so/forestofdevelop/f4e0f2cc58584c84b84c8223fcd44bf4">
+<a align="center" href="https://www.notion.so/forestofdevelop/f4e0f2cc58584c84b84c8223fcd44bf4">
 <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=Notion&logoColor=white">
 </a>
 
