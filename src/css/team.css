@@ -1,0 +1,73 @@
+.App {
+    margin: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .plus {
+    padding: 5px;
+    font-size: 16px;
+    border:#27ae60 1px solid;
+    color: #27ae60;
+    background-color: white;
+  }
+  
+  .TeamButton{
+    border:#27ae60 1px solid;
+    color: #27ae60;
+    background-color: white;
+  }
+
+  .RemoveButton{
+    border:#27ae60 1px solid;
+    color: #27ae60;
+    background-color: white;
+  }
+
+  .TeamName{
+    border:#27ae60 1px solid;
+    color: #27ae60;
+  }
+  
+  .team {
+    display: flex;
+    margin-bottom: 10px;
+    width: 15%;
+    border-radius: 6%;
+    border:#27ae60 1px solid;
+    background-color: #27ae60;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 40%;
+    background-color: white;
+    color: #27ae60;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .name {
+    color: white;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 5px;
+    font-size: 16px;
+  }
