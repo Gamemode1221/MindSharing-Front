@@ -16,6 +16,10 @@
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
+
+  .subtitle{
+    color: gainsboro;
+  }
   
   .form-title {
     margin-bottom: 20px;
@@ -47,6 +51,15 @@
     font-size: 1rem;
     color: #333333;
   }
+
+  #username, #useremail, #password, #password2{
+    border:#27ae60 1px solid;
+  }
+
+  .mind{
+    color: #27ae60;
+  }
+
   .signup{
     text-align: center;
   }
@@ -64,4 +77,17 @@
   
   .btn-signup:hover {
     background-color: #27ae60;
+  }
+
+  .kakaologin {
+    background: url(../img/kakao_login_medium_narrow.png) no-repeat center center;
+    width: 222px;
+    height: 49px;
+  }
+
+  .googlelogin {
+    background: url(../img/btn_google_signin_dark_pressed_web@2x.png) no-repeat center center;
+    background-size: cover;
+    width: 222px;
+    height: 49px;
   }
