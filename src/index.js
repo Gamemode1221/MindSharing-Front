@@ -6,6 +6,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Login from './js/login';
 import SignUp from './js/signup';
+import MyPage from './js/mypage';
+import Team from './js/team';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -13,9 +15,11 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route index element={<App />} />
+      <Route index element={<App />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="mypage" element={<MyPage />} />
+        <Route path="team" element={<Team />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
