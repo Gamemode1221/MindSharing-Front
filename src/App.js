@@ -20,8 +20,8 @@ function App() {
         <Routes>
             <Route exact path="./login" component={Login}></Route>
             <Route exact path="./signup" component={SignUp}></Route>
-            <Route exact path="./mypage" component={MyPage}></Route>
-            <Route exact path="./team" component={Team}></Route>
+            {/* <Route exact path="./mypage" component={MyPage}></Route>
+            <Route exact path="./team" component={Team}></Route> */}
         </Routes>
     </div>
   );
