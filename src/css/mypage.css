@@ -1,0 +1,64 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .user-info__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-info__icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .user-info__email {
+    font-size: 14px;
+    color: #999;
+    margin-left: 10px;
+  }
+  
+  .user-info__value {
+    flex-grow: 1;
+  }
+
+  .user-info__avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  
+  .user-info__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
+
+  .github-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #24292e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+  }
