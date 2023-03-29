@@ -1,0 +1,63 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px; /* 화면 밖에서 숨겨진 상태로 시작 */
+    width: 200px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .menu.open {
+    left: 0; /* 왼쪽으로 이동하여 메뉴 오픈 */
+  }
+  
+  .menu ul {
+    list-style: none;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .Menu {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .menu.close {
+    left: -200px;
+  }
