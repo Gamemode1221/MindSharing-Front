@@ -8,6 +8,7 @@ import Login from './js/login';
 import SignUp from './js/signup';
 import MyPage from './js/mypage';
 import Team from './js/team';
+import Menu from './js/menu';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -20,6 +21,7 @@ root.render(
         <Route path="signup" element={<SignUp />} />
         <Route path="mypage" element={<MyPage />} />
         <Route path="team" element={<Team />} />
+        <Route path="menu" element={<Menu />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
