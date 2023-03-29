@@ -1,0 +1,28 @@
+.person-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: relative;
+  }
+  
+  .Phead {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+  }
+  
+  .Pbody {
+    width: 4px;
+    height: 7px;
+    background-color: #000;
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    transform: rotate(-45deg);
+    transform-origin: 50% 0;
+  }

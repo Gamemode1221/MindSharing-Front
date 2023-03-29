@@ -5,6 +5,7 @@ import Login from '../js/login';
 import SignUp from '../js/signup';
 import MyPage from '../js/mypage';
 import Team from '../js/team';
+import PersonIcon from '../js/Personicon';
 
 function Menu() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -24,6 +25,13 @@ function Menu() {
       </button>
       <div className={`menu ${menuOpen ? 'open' : ''}`}>
         <ul>
+            <li>
+            <div className="login-button">
+                <PersonIcon />
+                <span className="login-text">
+                    <Link to="./login">로그인 하시오</Link>
+                </span>
+            </div></li>
           <li><Link to="./login">로그인</Link></li>
           <li><Link to="./signup">회원가입</Link></li>
           <li><Link to="./mypage">마이페이지</Link></li>
@@ -31,7 +39,7 @@ function Menu() {
         </ul>
         <button className="menu-close" onClick={handleMenuClose}>
           <a>◁</a>
-        </button>
+        </button>    
       </div>
           <Routes>
             <Route exact path="./login" component={Login}></Route>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import '../css/login.css';
+import SignUp from '../js/signup';
 
 function LoginPage() {
   const [username, setUsername] = useState('');
@@ -48,10 +50,16 @@ function LoginPage() {
             <label>
                 <input type="password" id="password" name="password" value={password} onChange={handlePasswordChange} />
             </label>
+            <label>
+                <a className="explanation">계정이 없으신가요? <span><Link to="../signup">회원가입</Link></span></a>
+              </label>
         </div>
-        <button type="submit" class="btn-login">로그인</button>
+        <button type="submit" class="btn-login">LOGIN</button>
       </form>
       {error && <p>{error}</p>}
+        <Routes>
+          <Route exact path="./signup" component={SignUp}></Route>
+        </Routes>
     </div>
   );
 }
