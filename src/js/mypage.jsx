@@ -22,6 +22,9 @@ const MyPage = () => {
       <h3>{userData.name}님</h3><SettingsIcon />
       <span className="user-info__email">{userData.email}</span>
       </div>
+      <div className="user-info_input">
+          <input type="text" id="userinput" placeholder="상태창 입력"></input>
+        </div>
         <div className="user-info__row">
           <span className="user-info__icon">&#9993;</span>
           <span className="user-info__value">{userData.email}</span>
