@@ -9,6 +9,7 @@ import SignUp from './js/signup';
 import MyPage from './js/mypage';
 import Team from './js/team';
 import Menu from './js/menu';
+import Setting from './js/setting';
 import PersonIcon from './js/Personicon';
 
 const rootElement = document.getElementById('root');
@@ -24,6 +25,7 @@ root.render(
         <Route path="team" element={<Team />} />
         <Route path="menu" element={<Menu />} />
         <Route path="personicon" element={<PersonIcon />} />
+        <Route path="setting" element={<Setting />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

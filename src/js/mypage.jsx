@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/mypage.css';
 import Calendar from './calendar';
+import SettingsIcon from './SettingIcon';
 
 const MyPage = () => {
   const userData = {
@@ -18,7 +19,7 @@ const MyPage = () => {
         <div className="user-info__avatar">
           <img src={userData.profileImage} alt="프로필 이미지" />
         </div>
-      <h3>{userData.name}님</h3>
+      <h3>{userData.name}님</h3><SettingsIcon />
       <span className="user-info__email">{userData.email}</span>
       </div>
         <div className="user-info__row">
@@ -33,10 +34,10 @@ const MyPage = () => {
         </div>
       </div>
       <div>
-        <div className='calendarApp'>
+      </div>
+      <div className='calendarApp'>
             <Calendar />
         </div>
-      </div>
     </div>
   );
 }
