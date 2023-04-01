@@ -5,6 +5,7 @@ import Login from '../js/login';
 import SignUp from '../js/signup';
 import MyPage from '../js/mypage';
 import Team from '../js/team';
+import Setting from './setting';
 import PersonIcon from '../js/Personicon';
 
 function Menu() {
@@ -24,28 +25,27 @@ function Menu() {
         <a>▷</a>
       </button>
       <div className={`menu ${menuOpen ? 'open' : ''}`}>
-        <ul>
+        <ul className='menu-list'>
             <li>
-            <div className="login-button">
+              <div className='Icon'>
                 <PersonIcon />
+                </div>
                 <span className="login-text">
-                    <Link to="./login">로그인 하시오</Link>
-                </span>
-            </div></li>
-          <li><Link to="./login">로그인</Link></li>
-          <li><Link to="./signup">회원가입</Link></li>
-          <li><Link to="./mypage">마이페이지</Link></li>
-          <li><Link to="./team">팀</Link></li>
+                    로그인이 필요합니다.
+                </span></li>
+          <li>
+            <span className="login-link"><Link to="./login">로그인하러가기 ▶</Link></span></li>
         </ul>
+        <div className='login-setting'>
+            <span><Link to ="./setting">설정</Link></span>
+          </div>
         <button className="menu-close" onClick={handleMenuClose}>
           <a>◁</a>
         </button>    
       </div>
           <Routes>
-            <Route exact path="./login" component={Login}></Route>
-            <Route exact path="./signup" component={SignUp}></Route>
-            <Route exact path="./mypage" component={MyPage}></Route>
             <Route exact path="./team" component={Team}></Route>
+            <Route exact path="./setting" component={Setting}></Route>
           </Routes>
     </div>
   );
