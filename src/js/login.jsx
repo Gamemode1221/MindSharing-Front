@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import '../css/login.css';
 import SignUp from '../js/signup';
+import Menu from '../js/menu';
 
 function LoginPage() {
   const [username, setUsername] = useState('');
@@ -41,6 +42,7 @@ function LoginPage() {
 
   return (
     <div className="login-container">
+      <Menu />
       <form className="login-form"  onSubmit={handleLogin}>
         <div className="form-group">
             <h2 className="login">로그인</h2>

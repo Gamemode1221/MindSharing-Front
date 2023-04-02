@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/signup.css'; // CSS 파일 import
+import Menu from '../js/menu';
 
 function SignUp() {
     const [username, setUsername] = useState('');
@@ -39,6 +40,7 @@ function SignUp() {
   
     return (
       <div className="signup-container">
+        <Menu />
         <form className="signup-form"  onSubmit={handleLogin}>
           <div className="form-group">
               <h2 className="signup">환영합니다!</h2>
