@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/team.css';
+import Menu from '../js/menu';
 
 function Team(){
     const [teamNames, setTeamNames] = useState([]);
@@ -27,6 +28,7 @@ function Team(){
 
   return (
     <div className="App">
+      <Menu />
       {showForm ? (
         <form onSubmit={addTeam}>
           <input type="text" name="teamName" placeholder="팀 이름을 입력 해 주세요" />
