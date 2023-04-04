@@ -11,6 +11,7 @@ import Team from './js/team';
 import Menu from './js/menu';
 import Setting from './js/setting';
 import PersonIcon from './js/Personicon';
+import Test from './js/test';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -26,6 +27,7 @@ root.render(
         <Route path="menu" element={<Menu />} />
         <Route path="personicon" element={<PersonIcon />} />
         <Route path="setting" element={<Setting />} />
+        <Route path="test" element={<Test />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

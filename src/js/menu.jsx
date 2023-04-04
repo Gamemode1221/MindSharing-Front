@@ -37,15 +37,15 @@ function Menu() {
             <span className="login-link"><Link to="./login">로그인하러가기 ▶</Link></span></li>
         </ul>
         <div className='login-setting'>
-            <span><Link to ="./setting">설정</Link></span>
+            <span><Link to ="../setting">설정</Link></span>
           </div>
         <button className="menu-close" onClick={handleMenuClose}>
           <a>◁</a>
         </button>    
       </div>
           <Routes>
-            <Route exact path="./team" component={Team}></Route>
-            <Route exact path="./setting" component={Setting}></Route>
+            <Route exact path="../team" component={Team}></Route>
+            <Route exact path="../setting" component={Setting}></Route>
           </Routes>
     </div>
   );

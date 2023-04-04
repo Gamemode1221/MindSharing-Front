@@ -60,7 +60,7 @@ function LoginPage() {
       </form>
       {error && <p>{error}</p>}
         <Routes>
-          <Route exact path="./signup" component={SignUp}></Route>
+          <Route exact path="../signup" component={SignUp}></Route>
         </Routes>
     </div>
   );
