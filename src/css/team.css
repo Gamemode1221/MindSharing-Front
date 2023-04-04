@@ -1,12 +1,31 @@
+.TeamMain{
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+
 .Team {
   margin: 0 auto;
   max-width: 600px;
-  padding-top: 18%;
   font-family: sans-serif;
+  padding-top: 18%;
+  color: #fff;
+  font-weight: 700;
+}
+
+.TeamLogo{
+  color: #2ecc71;
+  font-weight:400;
+}
+
+.TeamUser{
+  padding-top: 10%;
 }
 
 .icon {
+  margin-left: 16%;
   background-color: #2ecc71;
+  border: #fff 1px solid;
   color: #fff;
   border-radius: 10px;
   font-size: 24px;
@@ -37,14 +56,31 @@ form {
 }
 
 .TeamAdd {
-  margin-left: 10px;
-  padding: 10px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.TeamCancel{
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .TeamUl {
@@ -57,13 +93,11 @@ form {
   display: flex;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  background-color: #2ecc71;
   cursor: pointer;
+  border-radius: 2%;
 }
 
-li:hover {
-  background-color: #f5f5f5;
-}
 
 .team-icon {
   display: inline-block;
@@ -74,8 +108,8 @@ li:hover {
   font-size: 20px;
   font-weight: bold;
   line-height: 30px;
-  color: #fff;
-  background-color: #2ecc71;
+  color: #2ecc71;
+  background-color: #fff;
   margin-right: 10px;
 }
 

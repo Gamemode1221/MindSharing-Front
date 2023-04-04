@@ -6,6 +6,10 @@ function Team() {
   const [teams, setTeams] = useState([]);
   const [showAddForm, setShowAddForm] = useState(false);
 
+  const userData = {
+    name: "이현종"
+  };
+
   const addTeam = (teamName) => {
     setTeams([...teams, teamName]);
     setShowAddForm(false);
@@ -26,10 +30,14 @@ function Team() {
   };
 
   return (
-    <div className="Team">
-      <AddTeamButton onClick={handleAddTeamClick} />
-      {showAddForm && <AddTeamForm onAddTeam={addTeam} onCancel={() => setShowAddForm(false)} />}
-      <TeamList teams={teams} onAddIcon={addIcon} />
+    <div className="TeamMain">
+      <h1 className='TeamLogo'>TEAM</h1>
+      <h3 className='TeamUser'>{userData.name} 님이 참가하고 있는 팀</h3>
+      <div className="Team">
+        <AddTeamButton onClick={handleAddTeamClick} />
+        {showAddForm && <AddTeamForm onAddTeam={addTeam} onCancel={() => setShowAddForm(false)} />}
+        <TeamList teams={teams} onAddIcon={addIcon} />
+      </div>
     </div>
   );
 }
@@ -61,10 +69,10 @@ function AddTeamForm({ onAddTeam, onCancel }) {
         value={teamName}
         className="TeamName"
         onChange={(e) => setTeamName(e.target.value)}
-        placeholder="Enter team name"
+        placeholder="팀 이름을 입력 해 주세요"
       />
-      <button type="submit" className="TeamAdd">Add</button>
-      <button type="button" onClick={onCancel}>Cancel</button>
+      <button type="submit" className="TeamAdd">+</button>
+      <button type="button" className="TeamCancel" onClick={onCancel}>취소</button>
     </form>
   );
 }
