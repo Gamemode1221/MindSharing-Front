@@ -1,58 +1,90 @@
 import React, { useState } from 'react';
+import { FaStar } from 'react-icons/fa';
 import '../css/team.css';
-import Menu from '../js/menu';
 
-function Team(){
-    const [teamNames, setTeamNames] = useState([]);
-  const [showForm, setShowForm] = useState(false);
+function Team() {
+  const [teams, setTeams] = useState([]);
+  const [showAddForm, setShowAddForm] = useState(false);
 
-  const addTeam = (e) => {
-    e.preventDefault();
-    const teamName = e.target.elements.teamName.value.trim();
-    if (teamName) {
-      setTeamNames([...teamNames, teamName]);
-      setShowForm(false);
-      e.target.elements.teamName.value = "";
-    }
+  const addTeam = (teamName) => {
+    setTeams([...teams, teamName]);
+    setShowAddForm(false);
   };
 
-  const removeTeam = (indexToRemove) => {
-    setTeamNames(teamNames.filter((_, index) => index !== indexToRemove));
+  const addIcon = (teamName) => {
+    const newTeams = teams.map((team) => {
+      if (team === teamName) {
+        return teamName;
+      }
+      return team;
+    });
+    setTeams(newTeams);
   };
 
-  const [isClicked, setIsClicked] = useState(false);
-
-  const handleStarClick = () => {
-    setIsClicked(!isClicked);
+  const handleAddTeamClick = () => {
+    setShowAddForm(true);
   };
 
   return (
-    <div className="App">
-      <Menu />
-      {showForm ? (
-        <form onSubmit={addTeam}>
-          <input type="text" name="teamName" placeholder="팀 이름을 입력 해 주세요" />
-          <button className="TeamButton" type="submit">추가</button>
-          <button className="TeamButton" type="button" onClick={() => setShowForm(false)}>
-            취소
-          </button>
-        </form>
-      ) : (
-        <div>
-            <button className="plus" onClick={() => setShowForm(true)}>+</button>  팀 생성 / 추가
-        </div>
-      )}
-
-      {teamNames.map((teamName, index) => (
-        <div key={teamName} className="team">
-          <div className="icon">{teamName.charAt(0)}</div>
-          <div className="name">{teamName}</div>
-          <button className="RemoveButton" onClick={() => removeTeam(index)}>삭제</button>
-        </div>
-      ))}
+    <div className="Team">
+      <AddTeamButton onClick={handleAddTeamClick} />
+      {showAddForm && <AddTeamForm onAddTeam={addTeam} onCancel={() => setShowAddForm(false)} />}
+      <TeamList teams={teams} onAddIcon={addIcon} />
     </div>
   );
-  }
-  
+}
+
+function AddTeamButton({ onClick }) {
+  return (
+    <div>
+      <div className="icon" onClick={onClick}>
+        +
+      </div>
+      <span> 팀 생성/추가</span>
+    </div>
+  );
+}
+
+function AddTeamForm({ onAddTeam, onCancel }) {
+  const [teamName, setTeamName] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onAddTeam(teamName);
+    setTeamName('');
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        value={teamName}
+        className="TeamName"
+        onChange={(e) => setTeamName(e.target.value)}
+        placeholder="Enter team name"
+      />
+      <button type="submit" className="TeamAdd">Add</button>
+      <button type="button" onClick={onCancel}>Cancel</button>
+    </form>
+  );
+}
+
+function TeamList({ teams, onAddIcon }) {
+  const handleAddIcon = (teamName) => {
+    onAddIcon(teamName);
+  };
+
+  return (
+    <ul className='TeamUl'>
+      {teams.map((team) => (
+        <li className='Teamli' key={team} onClick={() => handleAddIcon(team)}>
+          <span className="team-icon">{team.charAt(0)}</span>
+          {team}
+          <span className="bookmark-icon"><FaStar /></span>
+        </li>
+      ))}
+    </ul>
+  );
+}
 
 export default Team;
