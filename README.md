@@ -3,7 +3,60 @@
  <img width="100px" src="https://res.cloudinary.com/anuraghazra/image/upload/v1594908242/logo_ccswme.svg" align="center" alt="GitHub Readme Stats" />
  </p>
  <h2 align="center">공유 마인드</h2>
- <p align="center">최용호, 이진아, 박소영, 이현종</p>
+
+# 🗂 한이음 E조 조원들 🗂
+<table>
+    <tr>
+        <td align="center">
+	    <a href="https://github.com/Gamemode1221">
+	    	<img src="https://avatars.githubusercontent.com/u/50878455?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>최용호</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+        <td align="center">
+	    <a href="https://github.com/leejinagood">
+	    	<img src="https://avatars.githubusercontent.com/u/105264158?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>이진아</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+        <td align="center">
+	    <a href="https://github.com/Brem0827">
+	    	<img src="https://avatars.githubusercontent.com/u/62270266?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>이현종</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+        <td align="center">
+	    <a href="https://github.com/parksoyeoung">
+	    	<img src="https://avatars.githubusercontent.com/u/120089475?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>박소영</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+    </tr>
+</table>
 
 
 <h3 align="center">📚 Tech Stack 📚</h3>
