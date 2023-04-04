@@ -4,8 +4,8 @@
  </p>
  <h2 align="center">공유 마인드</h2>
 
-# 🗂 한이음 E조 조원들 🗂
-<table>
+<h3 align="center"> 🗂 한이음 E조 조원들 🗂 </h3>
+<table align="center">
     <tr>
         <td align="center">
 	    <a href="https://github.com/Gamemode1221">
