@@ -22,8 +22,18 @@
   padding-top: 10%;
 }
 
+.Teamicon{
+  display: flex;
+  margin-left: 35%;
+}
+
+.TeamPlus{
+  color: #000;
+  display: flex;
+  margin: 10px;
+}
+
 .Ticon {
-  margin-left: 16%;
   background-color: #2ecc71;
   border: #fff 1px solid;
   color: #fff;

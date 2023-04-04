@@ -44,11 +44,11 @@ function Team() {
 
 function AddTeamButton({ onClick }) {
   return (
-    <div>
+    <div className='Teamicon'>
       <div className="Ticon" onClick={onClick}>
         +
       </div>
-      <span> 팀 생성/추가</span>
+      <span className='TeamPlus'> 팀 생성/추가</span>
     </div>
   );
 }
