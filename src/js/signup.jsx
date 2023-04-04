@@ -4,11 +4,16 @@ import Menu from '../js/menu';
 
 function SignUp() {
     const [username, setUsername] = useState('');
+    const [useremail, setUseremail] = useState('');
     const [password, setPassword] = useState('');
     const [error] = useState(null);
   
     const handleUsernameChange = (event) => {
       setUsername(event.target.value);
+    };
+
+    const handleUseremailChange = (event) => {
+      setUseremail(event.target.value);
     };
   
     const handlePasswordChange = (event) => {
@@ -49,7 +54,7 @@ function SignUp() {
                   <input type="text" id="username" name="username" value={username} placeholder="이름(필수)" onChange={handleUsernameChange} />
               </label><br/>
               <label>
-                  <input type="text" id="useremail" name="useremail" value={username} placeholder="이메일(필수)" onChange={handleUsernameChange} />
+                  <input type="text" id="useremail" name="useremail" value={useremail} placeholder="이메일(필수)" onChange={handleUseremailChange} />
               </label><br/>
               <label>
                   <input type="password" id="password" name="password" value={password} placeholder="비밀번호(필수)" onChange={handlePasswordChange} />
