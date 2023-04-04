@@ -45,7 +45,7 @@ function Team() {
 function AddTeamButton({ onClick }) {
   return (
     <div>
-      <div className="icon" onClick={onClick}>
+      <div className="Ticon" onClick={onClick}>
         +
       </div>
       <span> 팀 생성/추가</span>

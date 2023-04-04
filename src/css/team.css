@@ -22,7 +22,7 @@
   padding-top: 10%;
 }
 
-.icon {
+.Ticon {
   margin-left: 16%;
   background-color: #2ecc71;
   border: #fff 1px solid;
@@ -38,7 +38,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.icon:hover {
+.Ticon:hover {
   background-color: #27ae60;
 }
 
