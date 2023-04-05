@@ -1,0 +1,114 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* 화면 밖에서 숨겨진 상태로 시작 */
+    width: 250px;
+    height: 100%;
+    background-color: #409b0b;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .menu.open {
+    left: 0; /* 왼쪽으로 이동하여 메뉴 오픈 */
+  }
+  
+  .menu ul {
+    list-style: none;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .Menu {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    background-color: #409b0b;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .menu.close {
+    left: -200px;
+  }
+
+  .menu-list{
+    margin-top: 150%;
+  }
+
+  .login-link{
+    text-align: center;
+    margin-left: 12px;
+  }
+  
+  .login-text {
+    text-align: center;
+    font-size: 1.1em;
+    color: #ffffff;
+  }
+
+  .login-setting{
+    margin-top: 425px;
+    margin-left: 15px;
+    font-size: 1.1em;
+    font-weight: 800;
+    color: #ffffff;
+  }
+
+  .user-information {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info__avatar2 {
+    margin-right: 10px;
+  }
+  
+  .user-info__avatar2 img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .user-information h3 {
+    margin: 0;
+  }
+  
+  .user-mypage {
+    font-size: 0.8rem;
+    margin-left: 5px;
+    color: #666;
+  }
