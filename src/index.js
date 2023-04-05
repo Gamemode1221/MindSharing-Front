@@ -12,6 +12,7 @@ import Menu from './js/menu';
 import Setting from './js/setting';
 import PersonIcon from './js/Personicon';
 import Test from './js/test';
+import Loginsuccess from './js/loginsuccess';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -28,6 +29,7 @@ root.render(
         <Route path="personicon" element={<PersonIcon />} />
         <Route path="setting" element={<Setting />} />
         <Route path="test" element={<Test />} />
+        <Route path="loginsuccess" element={<Loginsuccess />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

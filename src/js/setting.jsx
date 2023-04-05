@@ -4,6 +4,7 @@ import Login from '../js/login';
 import SignUp from '../js/signup';
 import MyPage from '../js/mypage';
 import Team from '../js/team';
+import Loginsuccess from '../js/loginsuccess';
 
 function Setting() {
   return (
@@ -13,12 +14,14 @@ function Setting() {
           <li><Link to="../signup">회원가입</Link></li>
           <li><Link to="../mypage">마이페이지</Link></li>
           <li><Link to="../team">팀</Link></li>
+          <li><Link to="../loginsuccess">로그인 성공 메뉴</Link></li>
         </ul> 
           <Routes>
             <Route exact path="../login" component={Login}></Route>
             <Route exact path="../signup" component={SignUp}></Route>
             <Route exact path="../mypage" component={MyPage}></Route>
             <Route exact path="../team" component={Team}></Route>
+            <Route exact path="../loginsuccess" component={Team}></Route>
           </Routes>
     </div>
   );
