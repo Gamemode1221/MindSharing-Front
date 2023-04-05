@@ -6,6 +6,7 @@ function SignUp() {
     const [username, setUsername] = useState('');
     const [useremail, setUseremail] = useState('');
     const [password, setPassword] = useState('');
+    const [password2, setPassword2] = useState('');
     const [error] = useState(null);
   
     const handleUsernameChange = (event) => {
@@ -18,6 +19,10 @@ function SignUp() {
   
     const handlePasswordChange = (event) => {
       setPassword(event.target.value);
+    };
+
+    const handlePassword2Change = (event) => {
+      setPassword2(event.target.value);
     };
   
     const handleLogin = (event) => {
@@ -60,7 +65,7 @@ function SignUp() {
                   <input type="password" id="password" name="password" value={password} placeholder="비밀번호(필수)" onChange={handlePasswordChange} />
               </label><br/>
               <label>
-                  <input type="password" id="password2" name="password2" value={password} placeholder="비밀번호 재확인(필수)" onChange={handlePasswordChange} />
+                  <input type="password" id="password2" name="password2" value={password2} placeholder="비밀번호 재확인(필수)" onChange={handlePassword2Change} />
               </label><br/>
           </div>
           <button type="submit" class="btn-signup">가입하기</button>
