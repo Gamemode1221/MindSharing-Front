@@ -25,27 +25,26 @@ function SignUptest() {
     };
   */
     const handleLoginAndSubmit = (event) => {
-        event.preventDefault();
-        axios.post('/test', {text1, text2, text3})
-        .then((response) => {
+      event.preventDefault();
+      axios.post('/test', {text1, text2, text3})
+      .then((response) => {
         if (response.ok) {
-        // 로그인 성공
-        window.location.href = '/App';
-        axios.post('/test', {text1, text2, text3})
-        .then((response) => {
-        console.log(response.data);
-        })
-        .catch((error) => {
-        console.log(error);
-        });
+          // 로그인 성공
+          window.location.href = '/App';
+          axios.post('/test', {text1, text2, text3})
+            .then((response) => {
+              console.log(response.data);
+            })
+            .catch((error) => {
+              console.log(error);
+            });
         } else {
-        // 로그인 실패
-        alert('잘못된 사용자 이름 또는 비밀번호입니다.');
+          // 로그인 실패
+          alert('잘못된 사용자 이름 또는 비밀번호입니다.');
+          // 삭제된 코드
         }
-        })
-        
-        };
-  
+      });
+    };
     return (
       <div className="signup-container">
         <form className="signup-form"  onSubmit={handleLoginAndSubmit}>
