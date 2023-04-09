@@ -1,92 +1,93 @@
 .signup-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f2f2f2;
-  }
-  
-  .signup-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+/* form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
 
-  .subtitle{
-    color: gainsboro;
-  }
-  
-  .form-title {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333333;
-  }
-  
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  label {
-    text-align: center;
-    margin-bottom: 5px;
-    font-size: 1rem;
-    color: #666666;
-  }
-  
-  input[type="text"],
-  input[type="password"] {
-    border: none;
-    border-radius: 5px;
-    background-color: #f7f7f7;
-    font-size: 1rem;
-    color: #333333;
-  }
+.signup-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
 
-  #username, #useremail, #password, #password2{
-    border:#27ae60 1px solid;
-  }
+.form-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+}
 
-  .mind{
-    color: #27ae60;
-  }
+.welcome{
+  text-align: center;
+}
 
-  .signup{
-    text-align: center;
-  }
+.signup-subtitle{
+  color: gainsboro;
+}
 
-  .btn-signup {
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #2ecc71;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  
-  .btn-signup:hover {
-    background-color: #27ae60;
-  }
+.mind{
+  color: #27ae60;
+}
 
-  .kakaologin {
-    background: url(../img/kakao_login_medium_narrow.png) no-repeat center center;
-    width: 222px;
-    height: 49px;
-  }
+/* label */
+label {
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #666666;
+}
 
-  .googlelogin {
-    background: url(../img/btn_google_signin_dark_pressed_web@2x.png) no-repeat center center;
-    background-size: cover;
-    width: 222px;
-    height: 49px;
-  }
+input[type="text"],
+input[type="password"] {
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  font-size: 1rem;
+  color: #333333;
+}
+
+#username, #useremail, #password, #password2{
+  border:#27ae60 1px solid;
+}
+/* button */
+.btn-signup {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #2ecc71;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-signup:hover {
+  background-color: #27ae60;
+}
+/* social login */
+.kakaologin {
+  background: url(../img/kakao_login_medium_narrow.png) no-repeat center center;
+  width: 222px;
+  height: 49px;
+}
+
+.googlelogin {
+  background: url(../img/btn_google_signin_dark_pressed_web@2x.png) no-repeat center center;
+  background-size: cover;
+  width: 222px;
+  height: 49px;
+}
