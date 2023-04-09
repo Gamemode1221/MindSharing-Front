@@ -11,7 +11,6 @@ import Team from './js/team';
 import Menu from './js/menu';
 import Setting from './js/setting';
 import PersonIcon from './js/Personicon';
-import Test from './js/test';
 import Loginsuccess from './js/loginsuccess';
 
 const rootElement = document.getElementById('root');
@@ -28,7 +27,6 @@ root.render(
         <Route path="menu" element={<Menu />} />
         <Route path="personicon" element={<PersonIcon />} />
         <Route path="setting" element={<Setting />} />
-        <Route path="test" element={<Test />} />
         <Route path="loginsuccess" element={<Loginsuccess />} />
       </Routes>
     </BrowserRouter>
