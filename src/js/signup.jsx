@@ -24,16 +24,11 @@ function SignUp() {
       .then((response) => {
         if (response.ok) {
           window.location.href = '/App';
-          axios.post('/signup', {text1, text2, text3})
-            .then((response) => {
-              console.log(response.data);
-            })
-            .catch((error) => {
-              console.log(error);
-            }
-          );
-        } 
-      });
+        } else {
+        // 로그인 실패
+        alert('잘못된 사용자 이름 또는 비밀번호입니다.');
+      }
+    });
   };
   
   const validateInputs = () => {
