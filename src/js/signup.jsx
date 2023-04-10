@@ -20,11 +20,11 @@ function SignUp() {
       return;
     }
     
-    axios.post('/test', {text1, text2, text3})
+    axios.post('/signup', {text1, text2, text3})
       .then((response) => {
         if (response.ok) {
           window.location.href = '/App';
-          axios.post('/test', {text1, text2, text3})
+          axios.post('/signup', {text1, text2, text3})
             .then((response) => {
               console.log(response.data);
             })
