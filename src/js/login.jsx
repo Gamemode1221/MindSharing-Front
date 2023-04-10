@@ -20,7 +20,7 @@ function LoginPage() {
   const handleLogin = (event) => {
     event.preventDefault();
 
-    fetch('/api/login', {
+    fetch('/login', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: { 'Content-Type': 'application/json' },
