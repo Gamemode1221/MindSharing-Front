@@ -21,7 +21,7 @@ function Setting() {
             <Route exact path="../signup" component={SignUp}></Route>
             <Route exact path="../mypage" component={MyPage}></Route>
             <Route exact path="../team" component={Team}></Route>
-            <Route exact path="../loginsuccess" component={Team}></Route>
+            <Route exact path="../loginsuccess" component={Loginsuccess}></Route>
           </Routes>
     </div>
   );

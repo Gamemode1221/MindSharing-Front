@@ -8,7 +8,7 @@ const MyPage = () => {
     name: "이현종",
     email: "guswhd284@email.daelim.ac.kr",
     password: "********",
-    profileImage: "https://via.placeholder.com/150", // 프로필 이미지 주소
+    profileImage: "https://avatars.githubusercontent.com/u/62270266?v=4?s=100", // 프로필 이미지 주소
     github: "https://github.com/Brem0827",
   };
 

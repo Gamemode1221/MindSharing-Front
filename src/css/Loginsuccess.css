@@ -1,4 +1,4 @@
-.menu {
+.loginmenu {
     position: fixed;
     top: 0;
     left: -250px; /* 화면 밖에서 숨겨진 상태로 시작 */
@@ -9,19 +9,19 @@
     z-index: 999;
   }
   
-  .menu.open {
+  .loginmenu.open {
     left: 0; /* 왼쪽으로 이동하여 메뉴 오픈 */
   }
   
-  .menu ul {
+  .loginmenu ul {
     list-style: none;
   }
   
-  .menu li {
+  .loginmenu li {
     margin-bottom: 10px;
   }
   
-  .menu a {
+  .loginmenu a {
     text-decoration: none;
     color: #333333;
     font-size: 16px;
@@ -42,7 +42,7 @@
     z-index: 999;
   }
   
-  .Menu {
+  .loginmenu {
     height: 100vh;
     overflow: hidden;
   }
@@ -65,8 +65,8 @@
     left: -200px;
   }
 
-  .menu-list{
-    margin-top: 150%;
+  .loginmenu-list{
+    margin-top: 62%;
   }
 
   .login-link{
@@ -111,4 +111,14 @@
     font-size: 0.8rem;
     margin-left: 5px;
     color: #666;
+  }
+
+  .user-team-title, .user-team-mind{
+    color:antiquewhite;
+  }
+
+  .team-data-mind, .team-data-name{
+    color: antiquewhite;
+    font-weight: 100;
+    margin: 0 auto;
   }
