@@ -63,13 +63,13 @@ function SignUp() {
             <h2 className="welcome">환영합니다!</h2>
             <h6 className='signup-subtitle'>아이디어 회의를 위한 사이트 <font className="mind">공유마인드</font> 바로 시작해 보세요!</h6>
             <label>
-                <input type="text" id="username" name="username" value={text1} placeholder="이름(필수)" onChange={(event) => setUsername(event.target.value)} />
+                <input type="text" id="username" name="username" value={username} placeholder="이름(필수)" onChange={(event) => setUsername(event.target.value)} />
             </label><br/>
             <label>
-                <input type="text" id="useremail" name="useremail" value={text2} placeholder="이메일(필수)" onChange={(event) => setUseremail(event.target.value)} />
+                <input type="text" id="useremail" name="useremail" value={useremail} placeholder="이메일(필수)" onChange={(event) => setUseremail(event.target.value)} />
             </label><br/>
             <label>
-                <input type="password" id="password" name="password" value={text3} placeholder="비밀번호(필수)" onChange={(event) => setPassword(event.target.value)}  />
+                <input type="password" id="password" name="password" value={password} placeholder="비밀번호(필수)" onChange={(event) => setPassword(event.target.value)}  />
             </label><br/>
             <label>
                 <input type="password" id="password2" name="password2" value={password2} placeholder="비밀번호 재확인(필수)" onChange={(event) => setPassword2(event.target.value)} />
