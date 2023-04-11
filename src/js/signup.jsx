@@ -4,9 +4,9 @@ import axios from 'axios';
 import Menu from '../js/menu';
 
 function SignUp() {
-  const [text1, setUsername] = useState('');
-  const [text2, setUseremail] = useState('');
-  const [text3, setPassword] = useState('');
+  const [username, setUsername] = useState('');
+  const [useremail, setUseremail] = useState('');
+  const [password, setPassword] = useState('');
   const [password2, setPassword2] = useState('');
   const [error] = useState(null);
 
@@ -20,9 +20,9 @@ function SignUp() {
       return;
     }
     
-    axios.post('/signup', {text1, text2, text3})
+    axios.post('/signup', {username, useremail, password})
       .then((response) => {
-        if (response.ok) {
+        if (response.status === 200) {
           window.location.href = '/App';
         } else {
         // 로그인 실패
@@ -33,21 +33,21 @@ function SignUp() {
   
   const validateInputs = () => {
     // text1의 유효성 검사
-    if (!text1 || text1.length < 4 || text1.length > 16 || !/^[a-zA-Z0-9]+$/.test(text1)) {
-      return 'text1은 4글자 이상, 16글자 이하, 영문자와 숫자만 포함해주세요.';
+    if (!username || username.length < 4 || username.length > 16 || !/^[a-zA-Z0-9]+$/.test(username)) {
+      return '사용자 이름은 4글자 이상, 16글자 이하, 영문자와 숫자만 포함해주세요.';
     }
     
     // text2의 유효성 검사
-    if (!/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(text2)) {
-      return 'text2는 이메일 형식으로 입력해주세요.';
+    if (!/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(useremail)) {
+      return '사용자 이메일을 이메일 형식으로 입력해주세요.';
     }
     
     // text3의 유효성 검사
-    if (!text3 || text3.length < 4 || text3.length > 16 || !/^[a-zA-Z0-9]+$/.test(text3)) {
-      return 'text3은 4글자 이상, 16글자 이하, 영문자와 숫자만 포함해주세요.';
+    if (!password || password.length < 4 || password.length > 16 || !/^[a-zA-Z0-9]+$/.test(password)) {
+      return '사용자 비밀번호는 4글자 이상, 16글자 이하, 영문자와 숫자만 포함해주세요.';
     }
   
-    if (text3 !== password2) {
+    if (password !== password2) {
       return "비밀번호가 일치하지 않습니다.";
     }
 
