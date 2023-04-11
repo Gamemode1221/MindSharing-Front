@@ -8,8 +8,15 @@ function Loginsuccess() {
 
     const userData = {
         name: "이현종",
-        profileImage: "https://via.placeholder.com/150",
+        profileImage: "https://avatars.githubusercontent.com/u/62270266?v=4?s=100",
       };
+
+    const teamData = {
+      teamname1 : "한이음 팀",
+      teamname2 : "회사 프로젝트",
+      teammind1 : "최종 최종본",
+      teammind2 : "202030212 과제",
+    };
 
     const handleMenuButtonClick = () => {
       setMenuOpen(!menuOpen);
@@ -20,12 +27,12 @@ function Loginsuccess() {
       };
 
   return (
-    <div className="Menu">
+    <div className="loginMenu">
       <button className="menu-button" onClick={handleMenuButtonClick}>
         <a>▷</a>
       </button>
       <div className={`menu ${menuOpen ? 'open' : ''}`}>
-        <ul className='menu-list'>
+        <ul className='loginmenu-list'>
             <li>
                 <div>
               <div className='user-information'>
@@ -33,8 +40,22 @@ function Loginsuccess() {
                         <img src={userData.profileImage} alt="프로필 이미지" />
                     </div>
                 <h3>{userData.name}님</h3>
-                <h6 className='user-mypage'>MY PAGE</h6>
+                <a href="../mypage">
+                  <h6 className='user-mypage'>MY PAGE</h6>
+                </a>
               </div>
+              </div>
+            </li>
+            <li>
+              <div className='user-team-list'>
+                <h3 className='user-team-title'>TEAM</h3>
+                <h4 className='team-data-name'>- {teamData.teamname1}</h4>
+                <h4 className='team-data-name'>- {teamData.teamname2}</h4>
+              </div>
+              <div className='user-mind-list'>
+                <h3 className='user-team-mind'>보유 마인드</h3>
+                <h4 className='team-data-mind'>- {teamData.teammind1}</h4>
+                <h4 className='team-data-mind'>- {teamData.teammind2}</h4>
               </div>
             </li>
         </ul>
