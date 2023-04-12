@@ -1,0 +1,26 @@
+.TeamMain{
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .TeamLogo{
+    color: #2ecc71;
+    font-weight:400;
+  }
+  
+  .TeamUser{
+    margin: 0 auto;
+    padding-top: 10%;
+  }
+
+  .Teamlogin{
+    margin: 0 auto;
+    color:darkgrey;
+    text-decoration: underline;
+  }
+
+  .Teamlogin:hover{
+    color: violet;
+    cursor: pointer;
+  }

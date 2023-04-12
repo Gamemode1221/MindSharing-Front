@@ -79,3 +79,14 @@
     font-size: 20px;
     margin-left: 30px;
   }
+
+  .naver-blog-icon{
+    background: url(../img/naver.png) no-repeat center center; background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }

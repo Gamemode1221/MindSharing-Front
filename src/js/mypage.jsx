@@ -10,6 +10,7 @@ const MyPage = () => {
     password: "********",
     profileImage: "https://avatars.githubusercontent.com/u/62270266?v=4?s=100", // 프로필 이미지 주소
     github: "https://github.com/Brem0827",
+    blog: "https://velog.io/@yongho1221",
   };
 
   return (
@@ -28,6 +29,10 @@ const MyPage = () => {
         <div className="user-info__row">
           <span className="user-info__icon">&#9993;</span>
           <span className="user-info__value">{userData.email}</span>
+        </div>
+        <div className="user-info__row">
+        <div className="naver-blog-icon"></div>
+          <span className="user-info__value">{userData.blog}</span>
         </div>
         <div className="user-info__row">
             <div className="github-icon">
