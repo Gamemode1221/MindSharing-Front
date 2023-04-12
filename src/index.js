@@ -13,6 +13,7 @@ import Setting from './js/setting';
 import PersonIcon from './js/Personicon';
 import Loginsuccess from './js/loginsuccess';
 import Fetchtest from './js/fetchtest';
+import UnSignUpTeam from './js/UnSignUpTeam';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -30,6 +31,7 @@ root.render(
         <Route path="setting" element={<Setting />} />
         <Route path="loginsuccess" element={<Loginsuccess />} />
         <Route path="fetchtest" element={<Fetchtest />} />
+        <Route path="UnSignUpTeam" element={<UnSignUpTeam />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

@@ -23,7 +23,7 @@ function SignUp() {
     axios.post('/signup', {username, useremail, password})
       .then((response) => {
         if (response.status === 200) {
-          window.location.href = '/App';
+          window.location.href = '/';
         } else {
         // 로그인 실패
         alert('잘못된 사용자 이름 또는 비밀번호입니다.');
