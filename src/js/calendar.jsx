@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../css/calendar.css';
 
 // npm install react-calendar --save
@@ -85,6 +85,14 @@ function Calendar() {
     }
   };
 
+  useEffect(() => {
+    fetch('/events')
+      .then((res) => res.json())
+      .then((data) => setEvents(data))
+      .catch((error) => console.error(error));
+  }, []);
+
+
   return (
     <div className="calendar">
       <div className="calendar-header">
@@ -99,6 +107,6 @@ function Calendar() {
       <div className="calendar-grid">{renderCalendarDays()}</div>
     </div>
   );
-}
+};
 
 export default Calendar;
