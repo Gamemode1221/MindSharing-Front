@@ -54,8 +54,8 @@ function LoginPage() {
             </label>
             <label>
                 <a className="explanation">계정이 없으신가요? <span><Link to="../signup">회원가입</Link></span></a>
-              </label>
-        </div>
+            </label>
+          </div>
         <button type="submit" class="btn-login">LOGIN</button>
       </form>
       {error && <p>{error}</p>}
