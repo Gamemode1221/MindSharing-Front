@@ -19,16 +19,16 @@ function LoginPage() {
 
   const handleLogin = (event) => {
     event.preventDefault();
-
+  
     fetch('/login', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
       headers: { 'Content-Type': 'application/json' },
     })
       .then((response) => {
-        if (response.ok) {
+        if (response.status === 200 && response.ok) {
           // 로그인 성공
-          window.location.href = '/home';
+          window.location.href = '/';
         } else {
           // 로그인 실패
           alert('잘못된 사용자 이름 또는 비밀번호입니다.');
