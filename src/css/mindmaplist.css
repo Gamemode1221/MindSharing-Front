@@ -1,0 +1,156 @@
+.MindMap-List-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    background-color: #f5f5f5;
+    padding: 0 20px;
+  }
+  
+  .MindMap-List-add-button {
+    background-color: green;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .MindMap-List-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MindMap-List-modal {
+    background-color: #fff;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    height: 200px;
+  }
+  
+  .mindlist-title{
+    text-align: center;
+  }
+
+  .mindlist-item{
+    display: inline-block;
+    width: 142px;
+    margin: 40px;
+  }
+
+  .MindMap-List-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type='text'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom:5px;
+  }
+
+  .team-name-button {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .notice-button {
+    background-color: #b3b3b3;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+
+  .MindMap-List-team-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .MindMap-List-team-name {
+    background-color: #32b482;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-right: 10px;
+  }
+  
+  .MindMap-List-notice-button {
+    background-color: #dddddd;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+  
+  .MindMap-List-modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .MindMap-List-modal {
+    background-color: white;
+    width: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .MindMap-List-Submit-button{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .MindMap-List-close-button{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .MindMap-List-Title{
+    margin: 10px;
+    margin-left: 3%;
+  }

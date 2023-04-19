@@ -26,13 +26,14 @@ function Menu() {
       </button>
       <div className={`menu ${menuOpen ? 'open' : ''}`}>
         <ul className='menu-list'>
-            <li>
-              <div className='Icon'>
-                <PersonIcon />
-                </div>
-                <span className="login-text">
-                    로그인이 필요합니다.
-                </span></li>
+          <li>
+            <div className='Icon'>
+              <PersonIcon />
+              </div>
+              <span className="login-text">
+                  로그인이 필요합니다.
+              </span>
+            </li>
           <li>
             <span className="login-link"><Link to="./login">로그인하러가기 ▶</Link></span></li>
         </ul>
