@@ -15,6 +15,7 @@ import Loginsuccess from './js/loginsuccess';
 import Fetchtest from './js/fetchtest';
 import UnSignUpTeam from './js/UnSignUpTeam';
 import CalendarContainer from './js/CalendarContainer';
+import Mindmaplist from './js/mindmaplist';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -34,6 +35,7 @@ root.render(
         <Route path="fetchtest" element={<Fetchtest />} />
         <Route path="UnSignUpTeam" element={<UnSignUpTeam />} />
         <Route path="CalendarContainer" element={<CalendarContainer />} />
+        <Route path="Mindmaplist" element={<Mindmaplist />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

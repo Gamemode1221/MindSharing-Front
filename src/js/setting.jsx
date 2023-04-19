@@ -6,6 +6,7 @@ import MyPage from '../js/mypage';
 import Team from '../js/team';
 import Loginsuccess from '../js/loginsuccess';
 import UnSignUpTeam from './UnSignUpTeam';
+import Mindmaplist from './mindmaplist';
 
 function Setting() {
   return (
@@ -17,6 +18,7 @@ function Setting() {
           <li><Link to="../team">팀</Link></li>
           <li><Link to="../UnSignUpTeam">팀(로그인X)</Link></li>
           <li><Link to="../loginsuccess">로그인 성공 메뉴</Link></li>
+          <li><Link to="../mindmaplist">생성된 마인드맵</Link></li>
         </ul> 
           <Routes>
             <Route exact path="../login" component={Login}></Route>
@@ -25,6 +27,7 @@ function Setting() {
             <Route exact path="../team" component={Team}></Route>
             <Route exact path="../loginsuccess" component={Loginsuccess}></Route>
             <Route exact path="../UnSignUpTeam" component={UnSignUpTeam}></Route>
+            <Route exact path="../mindmaplist" component={Mindmaplist}></Route>
           </Routes>
     </div>
   );
