@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 import Menu from '../js/menu';
 import '../css/team.css';
+import axios from 'axios';
 
 function Team() {
   const [teams, setTeams] = useState([]);
@@ -62,6 +63,16 @@ function AddTeamForm({ onAddTeam, onCancel }) {
     e.preventDefault();
     onAddTeam(teamName);
     setTeamName('');
+
+    axios.post('/team', {teamName})
+    .then((response) => {
+      if (response.status === 200) {
+        window.location.href = '/';
+      } else {
+      alert('..');
+    }
+  });
+
   };
 
   return (
