@@ -67,7 +67,7 @@ function AddTeamForm({ onAddTeam, onCancel }) {
     axios.post('/team', {teamName})
     .then((response) => {
       if (response.status === 200) {
-        window.location.href = '/';
+        window.location.href = '/team';
       } else {
       alert('..');
     }
