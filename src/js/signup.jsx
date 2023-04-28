@@ -80,7 +80,7 @@ function SignUp() {
         <a href='https://accounts.google.com/v3/signin/identifier?dsh=S-217739019%3A1679463439054010&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3D%25EA%25B5%25AC%25EA%25B8%2580%26oq%3D%25EA%25B5%25AC%25EA%25B8%2580%26aqs%3Dchrome..69i57j46i131i199i433i465i512j0i131i433i512j69i59j0i131i433i512l2j0i512j69i61.2265j0j4%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=ko&ifkv=AWnogHd71Fi9wQg6foFlZfqBqbirbUkZ40lM1PMWDSdpQBncfMeVZbAq9Zoo5lpfhEVRp6N4hAZl&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin'>
           <div className="googlelogin"></div>
         </a>
-        <a href="https://kauth.kakao.com/oauth/authorize?client_id=989929564bca258170149c609e6d427e&redirect_uri=http://localhost:8082/loginsuccess&response_type=code">
+        <a href="https://kauth.kakao.com/oauth/authorize?client_id=989929564bca258170149c609e6d427e&redirect_uri=http://localhost:8082/home&response_type=code">
           <div className="kakaologin"></div> <br/>
         </a>
       </form>
