@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/mypage.css';
-import CalendarContainer from './CalendarContainer';
+import Calendar from './calendar';
 import SettingsIcon from './SettingIcon';
 
 const MyPage = () => {
@@ -44,7 +44,7 @@ const MyPage = () => {
       <div>
       </div>
       <div className='calendarApp'>
-            <CalendarContainer />
+            <Calendar />
         </div>
     </div>
   );
