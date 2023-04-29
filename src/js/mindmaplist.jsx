@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../css/mindmaplist.css';
 import Menu from '../js/menu';
 import background from '../img/background-gray.jpg';
+import axios from 'axios';
 
 function Mindmaplist() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,6 +29,15 @@ function Mindmaplist() {
     const newTitle = event.target.title.value;
     setTitles([...titles, newTitle]);
     closeModal();
+
+    axios.post('/mindmaplist', {titles})
+    .then((response) => {
+      if (response.status === 200) {
+        window.location.href = '/mindmaplist';
+      } else {
+      alert('..');
+    }
+  });
   };
 
   return (
