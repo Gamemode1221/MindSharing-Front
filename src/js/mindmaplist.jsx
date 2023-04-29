@@ -30,7 +30,7 @@ function Mindmaplist() {
     setTitles([...titles, newTitle]);
     closeModal();
 
-    axios.post('/mindmaplist', {titles})
+    axios.post('/mindmaplist', { title: newTitle })
     .then((response) => {
       if (response.status === 200) {
         window.location.href = '/mindmaplist';
@@ -38,7 +38,8 @@ function Mindmaplist() {
       alert('..');
     }
   });
-  };
+};
+
 
   return (
     <div className="MindMap-List">
@@ -61,7 +62,9 @@ function Mindmaplist() {
               <div className="MindMap-List-modal-header">
                 <h3>제목을 입력해주세요</h3>
                 <div className="MindMap-List-modal-body">
-                  <input type="text" id="title" name="title" required /><br />
+
+                  <input type="text" value={titles} className="titles" onChange={(e) => setTitles(e.target.value)} />
+
                 </div>
                 <div className="MindMap-List-modal-footer">
                   <button className='MindMap-List-Submit-button' type="submit">완료</button>
