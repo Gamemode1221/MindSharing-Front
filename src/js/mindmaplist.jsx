@@ -51,7 +51,7 @@ function Mindmaplist() {
               <div className="MindMap-List-modal-header">
                 <h3>제목을 입력해주세요</h3>
                 <div className="MindMap-List-modal-body">
-                  <input type="text" id="title" name="title" required /><br />
+                  <input type="text" className="MindMap-title" name="title" required /><br />
                 </div>
                 <div className="MindMap-List-modal-footer">
                   <button className='MindMap-List-Submit-button' type="submit">완료</button>

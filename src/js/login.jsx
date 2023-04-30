@@ -73,8 +73,8 @@ function LoginPage() {
             <label>
             <input
               type="text"
-              id="useremail"
-              name="useremail"
+              id="username"
+              name="username"
               value={username}
               onChange={handleUsernameChange}
             />
