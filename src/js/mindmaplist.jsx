@@ -62,9 +62,13 @@ function Mindmaplist() {
               <div className="MindMap-List-modal-header">
                 <h3>제목을 입력해주세요</h3>
                 <div className="MindMap-List-modal-body">
+<<<<<<< HEAD
 
                   <input type="text" value={titles} className="titles" onChange={(e) => setTitles(e.target.value)} />
 
+=======
+                  <input type="text" className="MindMap-title" name="title" required /><br />
+>>>>>>> LeeHyunJong
                 </div>
                 <div className="MindMap-List-modal-footer">
                   <button className='MindMap-List-Submit-button' type="submit">완료</button>

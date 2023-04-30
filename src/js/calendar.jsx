@@ -57,7 +57,19 @@ function Calendar() {
     if (title) {
       const id = Math.random().toString(36).substr(2, 9);
       const event = { id, title, date };
-      setEvents([...events, event]);
+      // POST 요청
+      fetch('/events', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(event)
+      })
+      .then((res) => res.json())
+      .then((data) => {
+        setEvents([...events, data]); // 서버에서 생성된 event 객체를 추가하여 상태 업데이트
+      })
+      .catch((error) => console.error(error));
     }
   };
 

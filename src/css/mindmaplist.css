@@ -62,7 +62,7 @@
     font-weight: bold;
   }
   
-  input[type='text'] {
+  .MindMap-title {
     width: 100%;
     padding: 8px;
     margin-bottom:5px;
