@@ -154,3 +154,16 @@
     margin: 10px;
     margin-left: 3%;
   }
+
+  .MindMap-List-modal h3{
+    text-align: center;
+  }
+
+  .MindMap-List-modal p{
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .MindMap-List-Submit-button, .MindMap-List-close-button{
+    margin: 3%;
+  }
