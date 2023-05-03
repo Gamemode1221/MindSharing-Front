@@ -27,6 +27,10 @@ function Mindmaplist() {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     const newTitle = event.target.title.value;
+    if (newTitle.length > 12) {
+      alert("최대 12글자까지 입력 가능합니다.");
+      return;
+    }
     setTitles([...titles, newTitle]);
     closeModal();
 
@@ -61,6 +65,7 @@ function Mindmaplist() {
             <form onSubmit={handleFormSubmit}>
               <div className="MindMap-List-modal-header">
                 <h3>제목을 입력해주세요</h3>
+                <p>제목은 12글자 까지만 입력이 가능합니다.</p>
                 <div className="MindMap-List-modal-body">
                   <input type="text" className="MindMap-title" name="title" required /><br />
 
