@@ -1,128 +1,147 @@
 .loginmenu {
-    position: fixed;
-    top: 0;
-    left: -250px; /* 화면 밖에서 숨겨진 상태로 시작 */
-    width: 250px;
-    height: 100%;
-    background-color: #409b0b;
-    transition: all 0.3s ease-in-out;
-    z-index: 999;
-  }
-  
-  .loginmenu.open {
-    left: 0; /* 왼쪽으로 이동하여 메뉴 오픈 */
-  }
-  
-  .loginmenu ul {
-    list-style: none;
-  }
-  
-  .loginmenu li {
-    margin-bottom: 10px;
-  }
-  
-  .loginmenu a {
-    text-decoration: none;
-    color: #333333;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  
-  .menu-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 10px;
-    border: none;
-    background-color: #ffffff;
-    border-radius: 10px;
-    cursor: pointer;
-    z-index: 999;
-  }
-  
-  .loginmenu {
-    height: 100vh;
-    overflow: hidden;
-  }
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden initially */
+  width: 250px;
+  height: 100%;
+  background-color: #409b0b;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}
 
-  .menu-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px;
-    border: none;
-    background-color: #409b0b;
-    border-radius: 10px;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  
-  .menu.close {
-    left: -200px;
-  }
+.loginmenu.open {
+  left: 0; /* Slide in from the left to open the menu */
+}
 
-  .loginmenu-list{
-    margin-top: 22%;
-  }
+.loginmenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .login-link{
-    text-align: center;
-    margin-left: 12px;
-  }
-  
-  .login-text {
-    text-align: center;
-    font-size: 1.1em;
-    color: #ffffff;
-  }
+.loginmenu li {
+  margin-bottom: 10px;
+}
 
-  .login-setting{
-    margin-top: 125px;
-    margin-left: 15px;
-    font-size: 1.1em;
-    font-weight: 800;
-    color: #ffffff;
-  }
+.loginmenu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
 
-  .user-team-list, .user-mind-list {
-    margin-top: 20px;
-  }
+.menu-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
 
-  .user-information {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-info__avatar2 {
-    margin-right: 10px;
-  }
-  
-  .user-info__avatar2 img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-  }
-  
-  .user-information h3 {
-    margin: 0;
-  }
-  
-  .user-mypage {
-    font-size: 0.8rem;
-    margin-left: 5px;
-    color: #666;
-  }
+.menu-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  background-color: #409b0b;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
 
-  .user-team-title, .user-mind-title{
-    color:antiquewhite;
-  }
+.loginmenu-list {
+  margin-top: 22%;
+}
 
-  .team-data-name, .mind-data-name{
-    color: antiquewhite;
-    font-weight: 100;
-    margin: 0 auto;
-  }
+.login-link {
+  text-align: center;
+  margin-left: 12px;
+}
+
+.login-text {
+  text-align: center;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.login-setting {
+  margin-top: 125px;
+  margin-left: 15px;
+  font-size: 1.1em;
+  font-weight: 800;
+  color: #fff;
+}
+
+.user-team-list,
+.user-mind-list {
+  margin-top: 20px;
+}
+
+.user-information {
+  display: flex;
+  align-items: center;
+}
+
+.user-info__avatar2 {
+  margin-right: 10px;
+}
+
+.user-info__avatar2 img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.user-information h3 {
+  margin: 0;
+}
+
+.user-mypage {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  color: #666;
+}
+
+.user-team-title,
+.user-mind-title {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.team-data-name,
+.mind-data-name {
+  color: #fff;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.user-team-input, .user-mind-input{
+  width: 130px;
+}
+
+.team-data-add-button, .mind-data-add-button{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.mind-data-remove, .team-data-remove{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

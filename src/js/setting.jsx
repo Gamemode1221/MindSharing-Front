@@ -21,13 +21,13 @@ function Setting() {
           <li><Link to="../mindmaplist">생성된 마인드맵</Link></li>
         </ul> 
           <Routes>
-            <Route exact path="../login" component={Login}></Route>
-            <Route exact path="../signup" component={SignUp}></Route>
-            <Route exact path="../mypage" component={MyPage}></Route>
-            <Route exact path="../team" component={Team}></Route>
-            <Route exact path="../loginsuccess" component={Loginsuccess}></Route>
-            <Route exact path="../UnSignUpTeam" component={UnSignUpTeam}></Route>
-            <Route exact path="../mindmaplist" component={Mindmaplist}></Route>
+            <Route exact path="../login/*" component={Login}></Route>
+            <Route exact path="../signup/*" component={SignUp}></Route>
+            <Route exact path="../mypage/*" component={MyPage}></Route>
+            <Route exact path="../team/*" component={Team}></Route>
+            <Route exact path="../loginsuccess/*" component={Loginsuccess}></Route>
+            <Route exact path="../UnSignUpTeam/*" component={UnSignUpTeam}></Route>
+            <Route exact path="../mindmaplist/*" component={Mindmaplist}></Route>
           </Routes>
     </div>
   );
