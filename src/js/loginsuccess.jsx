@@ -87,7 +87,7 @@ function Loginsuccess() {
                 </div>
               ))}
               <div className='team-data-add'>
-                <input type='text' value={newTeamName} onChange={handleNewTeamNameChange} placeholder='추가할 팀 이름' />
+                <input className='user-team-input' type='text' value={newTeamName} onChange={handleNewTeamNameChange} placeholder='팀 이름 추가' />
                 <button className='team-data-add-button' onClick={handleAddTeamClick}>+</button>
               </div>
             </div>
@@ -95,14 +95,14 @@ function Loginsuccess() {
           <li>
             <div className='user-mind-list'>
               <h3 className='user-mind-title'>보유마인드</h3>
-              {teamList.map((mindName, index) => (
+              {mindList.map((mindName, index) => (
                 <div key={index} className='mind-data'>
                   <h4 className='mind-data-name'>- {mindName}</h4>
                   <button className='mind-data-remove' onClick={() => handleRemoveMindClick(index)}>-</button>
                 </div>
               ))}
               <div className='mind-data-add'>
-                <input type='text' value={newMindName} onChange={handleNewMindNameChange} placeholder='추가할 마인드맵 이름' />
+                <input className='user-mind-input' type='text' value={newMindName} onChange={handleNewMindNameChange} placeholder='마인드맵 추가' />
                 <button className='mind-data-add-button' onClick={handleAddMindClick}>+</button>
               </div>
             </div>
