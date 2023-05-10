@@ -44,13 +44,6 @@ function Mindmaplist() {
     closeModal();
   };
 
-  const handleAnnouncementAddSubmit = (event) => {
-    event.preventDefault();
-    const newAnnouncement = event.target.title.value;
-    setAnnouncement([...announcement, newAnnouncement]);
-    closeAnnouncementModal();
-  };
-
   return (
     <div className="MindMap-List">
       <div className="MindMap-List-header">
@@ -68,19 +61,14 @@ function Mindmaplist() {
       {isAnnouncementModalOpen && (
         <div className="Announcement-List-modal-overlay">
           <div className="Announcement-List-modal">
-            <form onSubmit={handleAnnouncementAddSubmit}>
+            <form >
               <div className="Announcement-List-modal-header">
                 <h3>공지사항</h3>
-              </div>
-              <div className="Announcement-List-modal-body">
-                <input type="text" className="Announcement-title" name="title" required />
-              </div>
-              <div className="Announcement-List-modal-footer">
-                <button className="Announcement-List-Submit-button" type="submit">
-                  완료
-                </button>
+                <p className='Announcement-List'>5시까지 제출!</p>
+                <p className='Announcement-List'>4월 22일에비대면 회의 있습니다.~필수참여!! 불참시 벌금</p>
+                <p className='Announcement-List'>(대충 공지사항이라는 내용)</p>
                 <button className="Announcement-List-close-button" onClick={closeAnnouncementModal}>
-                  닫기
+                  확인
                 </button>
               </div>
             </form>
@@ -117,15 +105,6 @@ function Mindmaplist() {
             style={{ width: '140px', height: '140px', borderRadius: 20 }}
           />
           <div className="mindlist-title">{title}</div>
-        </div>
-      ))}
-      {announcement.map((title) => (
-        <div className="Announcement-item" key={title}>
-          <img
-            src={background}
-            style={{ width: '140px', height: '140px', borderRadius: 20 }}
-          />
-          <div className="Announcement-title">{title}</div>
         </div>
       ))}
     </div>
