@@ -6,7 +6,9 @@ import axios from 'axios';
 
 function Mindmaplist() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isAnnouncementModalOpen, setIsAnnouncementModalOpen] = useState(false);
   const [titles, setTitles] = useState([]);
+  const [announcement, setAnnouncement] = useState([]);
 
   const userData = {
     teamname: '공유마인드',
@@ -16,21 +18,29 @@ function Mindmaplist() {
     setIsModalOpen(true);
   };
 
+  const openAnnouncementModal = () => {
+    setIsAnnouncementModalOpen(true);
+  };
+
   const closeModal = () => {
     setIsModalOpen(false);
+  };
+
+  const closeAnnouncementModal = () => {
+    setIsAnnouncementModalOpen(false);
   };
 
   const handleAddClick = () => {
     openModal();
   };
 
+  const handleAnnouncementAddClick = () => {
+    openAnnouncementModal();
+  };
+
   const handleFormSubmit = (event) => {
     event.preventDefault();
     const newTitle = event.target.title.value;
-    if (newTitle.length > 12) {
-      alert("최대 12글자까지 입력 가능합니다.");
-      return;
-    }
     setTitles([...titles, newTitle]);
     closeModal();
 
@@ -55,9 +65,27 @@ function Mindmaplist() {
         <Menu />
         <div className="team-info">
           <button className="team-name-button">{userData.teamname}</button>
-          <button className="notice-button">공지사항</button>
+          <button className="notice-button" onClick={handleAnnouncementAddClick}>공지사항</button>
         </div>
       </div>
+
+      {isAnnouncementModalOpen && (
+        <div className="Announcement-List-modal-overlay">
+          <div className="Announcement-List-modal">
+            <form >
+              <div className="Announcement-List-modal-header">
+                <h3>공지사항</h3>
+                <p className='Announcement-List'>5시까지 제출!</p>
+                <p className='Announcement-List'>4월 22일에비대면 회의 있습니다.~필수참여!! 불참시 벌금</p>
+                <p className='Announcement-List'>(대충 공지사항이라는 내용)</p>
+                <button className="Announcement-List-close-button" onClick={closeAnnouncementModal}>
+                  확인
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
 
       {isModalOpen && (
         <div className="MindMap-List-modal-overlay">
