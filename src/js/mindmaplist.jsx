@@ -7,11 +7,16 @@ import axios from 'axios';
 function Mindmaplist() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isAnnouncementModalOpen, setIsAnnouncementModalOpen] = useState(false);
+  const [isMindModalOpen, setIsMindModalOpen] = useState(false);
   const [titles, setTitles] = useState([]);
   const [announcement, setAnnouncement] = useState([]);
 
   const userData = {
     teamname: '공유마인드',
+    teamLeaderName : '최용호',
+    teamMemberName : '이진아, 이현종, 박소영',
+    teamGithub : 'https://github.com/Gamemode1221/MindSharing',
+    teamGithubFront : 'https://github.com/Gamemode1221/MindSharing-Front',
   };
 
   const openModal = () => {
@@ -22,6 +27,10 @@ function Mindmaplist() {
     setIsAnnouncementModalOpen(true);
   };
 
+  const openMindModal = () => {
+    setIsMindModalOpen(true);
+  };
+
   const closeModal = () => {
     setIsModalOpen(false);
   };
@@ -30,12 +39,20 @@ function Mindmaplist() {
     setIsAnnouncementModalOpen(false);
   };
 
+  const closeMindModal = () => {
+    setIsMindModalOpen(false);
+  };
+
   const handleAddClick = () => {
     openModal();
   };
 
   const handleAnnouncementAddClick = () => {
     openAnnouncementModal();
+  };
+
+  const handleMindAddClick = () => {
+    openMindModal();
   };
 
   const handleFormSubmit = (event) => {
@@ -64,7 +81,7 @@ function Mindmaplist() {
         </button>
         <Menu />
         <div className="team-info">
-          <button className="team-name-button">{userData.teamname}</button>
+          <button className="team-name-button" onClick={handleMindAddClick}>{userData.teamname}</button>
           <button className="notice-button" onClick={handleAnnouncementAddClick}>공지사항</button>
         </div>
       </div>
@@ -79,6 +96,25 @@ function Mindmaplist() {
                 <p className='Announcement-List'>4월 22일에비대면 회의 있습니다.~필수참여!! 불참시 벌금</p>
                 <p className='Announcement-List'>(대충 공지사항이라는 내용)</p>
                 <button className="Announcement-List-close-button" onClick={closeAnnouncementModal}>
+                  확인
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {isMindModalOpen && (
+        <div className="Mind-List-modal-overlay">
+          <div className="Mind-List-modal">
+            <form >
+              <div className="Mind-List-modal-header">
+                <h3>{userData.teamname}</h3>
+                <p className='Mind-List'>{userData.teamLeaderName}</p>
+                <p className='Mind-List'>{userData.teamMemberName}</p>
+                <p className='Mind-List'>{userData.teamGithub}</p>
+                <p className='Mind-List'>{userData.teamGithubFront}</p>
+                <button className="Mind-List-close-button" onClick={closeMindModal}>
                   확인
                 </button>
               </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
-import Menu from '../js/menu';
+//import Menu from '../js/menu';
 import '../css/team.css';
 import axios from 'axios';
 
@@ -33,7 +33,6 @@ function Team() {
 
   return (
     <div className="TeamMain">
-      <Menu />
       <h1 className='TeamLogo'>TEAM</h1>
       <h3 className='TeamUser'>{userData.name} 님이 참가하고 있는 팀</h3>
       <div className="Team">
