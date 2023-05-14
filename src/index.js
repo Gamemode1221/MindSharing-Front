@@ -16,6 +16,7 @@ import Fetchtest from './js/fetchtest';
 import UnSignUpTeam from './js/UnSignUpTeam';
 import CalendarContainer from './js/CalendarContainer';
 import Mindmaplist from './js/mindmaplist';
+import MindMap from './js/MindMap';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -24,6 +25,7 @@ root.render(
     <BrowserRouter>
       <Routes>
       <Route index element={<App />} />
+        <Route path="MindMap" element={<MindMap />} />
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="mypage" element={<MyPage />} />
