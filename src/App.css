@@ -1,3 +1,20 @@
-ul{
-  list-style: none;
+.MainPage-start {
+  position: absolute;
+  background: #79a287;
+  width:338px;
+  height: 205px;
+  top: 57.4%;
+  left: 50.5%;
+  border: 1px solid white;
+  border-radius: 10%;
+  transform: translate(-50%, -50%);
 }
+
+.MainPage-Text{
+  font-size: 2.8em;
+  font-weight: 600;
+  color : white;
+}
+
+a { text-decoration:none !important }
+a:hover { text-decoration:none !important }
